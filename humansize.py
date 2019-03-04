@@ -1,6 +1,12 @@
 SUFFIXES = ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
 
 def approximate_size(size):
+    ''' Convert a file to humn-readalble form.
+    Keyword arguments:
+    size -- file size in bytes
+    
+    Returns: string
+    '''
     multiple = 1024
     for suffix in SUFFIXES:
         size /= multiple
