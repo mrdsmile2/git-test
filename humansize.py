@@ -1,6 +1,6 @@
 SUFFIXES = ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
 
-def approximate_size(size):
+def approximate_size(size=10000):
     ''' Convert a file to humn-readalble form.
     Keyword arguments:
     size -- file size in bytes
